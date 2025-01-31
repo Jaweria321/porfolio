@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #f9004d;
+    --secondary-color: #0fcf94;
+    --grey-color: #B1B1B1;
+    --grey-color-1: #868686;
+    --color-bg-1: #101010;
+    --color-bg-2: #191919;
+    --color-bg-3: #F9F9F9;
+    --text-color: rgba(198, 201, 216, 0.75);
+    --font-family-inter: "Inter", sans-serif;
+}
+@media only screen and (max-width: 991px) {
+    aside {
+        height: calc(100vh - 80px);
+        top: 80px;
+    }
+    main {
+        margin-left: 0;
+    }
+    .mob-header-logo {
+        display: block;
+    }
+    .site-main-section {
+        margin-left: 50px;
+    }
+    .site-sidebar {
+        width: 50px;
+        padding: 0;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+    .site-sidebar:hover {
+        width: 250px;
+    }
+    .site-sidebar-logo {
+        display: none !important;
+    }
+    .site-sidebar .sidebar-menu-wrapper ul li a span{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+}
+@media only screen and (max-height: 620px) {
+    .site-sidebar .nav-pills .nav-link {
+        line-height: 40px;
+    }
+}
