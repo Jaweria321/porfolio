@@ -22,7 +22,7 @@
     <title>Portfolio | Jaweria Ehsan</title>
   </head>
   <body>
-    <aside class="site-sidebar">
+    <aside class="site-sidebar site-nav">
       <div class="site-sidebar-inner-wrapper">
         <a
           href="home.html"
@@ -31,7 +31,7 @@
           <span class="site-sidebar-logo"
             ><img src="assets/images/jaweria_ehsan.jpg" alt="logo"
           /></span>
-          <h3 class="my-name">Jaweria Ehsan</h3>
+          <span class="my-name">Jaweria Ehsan</span>
         </a>
         <div class="sidebar-menu-wrapper">
           <ul class="nav nav-pills flex-column sidebar-menu">
@@ -65,7 +65,7 @@
               </a>
             </li>
             <li>
-              <a href="index.html#contact-me" class="nav-link side-bar-link">
+              <a href="index.html#contact" class="nav-link side-bar-link">
                 Contact Me
               </a>
             </li>
@@ -96,7 +96,127 @@
         </div>
       </div>
     </aside>
-
+    <!-- Mobile Nav -->
+    <header>
+      <nav class="navbar navbar-dark bg-dark fixed-top mobile-top-header">
+        <div class="container-fluid">
+          <a class="navbar-brand site-mobile-header-logo-wrapper" href="#">
+            <span class="site-mobile-header-logo"
+              ><img src="assets/images/jaweria_ehsan.jpg" alt="logo"
+            /></span>
+            <span class="my-name">Jaweria Ehsan</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="site-nav">
+                <div class="sidebar-menu-wrapper">
+                  <ul class="nav nav-pills flex-column sidebar-menu">
+                    <li class="nav-item">
+                      <a
+                        href="index.html"
+                        class="nav-link side-bar-link active"
+                        aria-current="page"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="index.html#about-me"
+                        class="nav-link side-bar-link"
+                      >
+                        About Me
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="index.html#skills"
+                        class="nav-link side-bar-link"
+                      >
+                        My Skills
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="index.html#resume"
+                        class="nav-link side-bar-link"
+                      >
+                        Resume
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="index.html#portfolio"
+                        class="nav-link side-bar-link"
+                      >
+                        Portfolio
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="index.html#contact"
+                        class="nav-link side-bar-link"
+                      >
+                        Contact Me
+                      </a>
+                    </li>
+                  </ul>
+                  <h4 class="follow-me-heading">Follow Me</h4>
+                  <ul class="nav nav-pills social-links">
+                    <li>
+                      <a href="" class="nav-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link">
+                        <i class="fa-brands fa-free-code-camp"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <div class="site-main-section">
         <div class="container-fluid">
@@ -130,13 +250,13 @@
         <div class="container">
           <h2>My Top Skills</h2>
           <div class="row gy-3">
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <img src="assets/images/icons/nextjs.svg" alt="" />
                 <p>Nextjs</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <p class="skill-icon">
                   <i class="fa-brands fa-react"></i>
@@ -144,7 +264,7 @@
                 <p>Reactjs</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <p class="skill-icon">
                   <i class="fa-brands fa-html5"></i>
@@ -152,7 +272,7 @@
                 <p>HTML5</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <p class="skill-icon">
                   <i class="fa-brands fa-css3-alt"></i>
@@ -160,7 +280,7 @@
                 <p>CSS3</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <p class="skill-icon">
                   <i class="fa-brands fa-bootstrap"></i>
@@ -168,19 +288,19 @@
                 <p>Bootstrap</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <img src="assets/images/icons/tailwind.svg" alt="" />
                 <p>Tailwind CSS</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <img src="assets/images/icons/scss.svg" alt="" />
                 <p>SASS/SCSS</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <p class="skill-icon">
                   <i class="fa-brands fa-js"></i>
@@ -188,13 +308,13 @@
                 <p>JavaScript</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <img src="assets/images/icons/jquery.svg" alt="" />
                 <p>jQuery</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <p class="skill-icon">
                   <i class="fa-brands fa-figma"></i>
@@ -202,13 +322,13 @@
                 <p>Figma</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <img src="assets/images/icons/photoshop.svg" alt="" />
                 <p>Photoshop</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-4 col-lg-3">
               <div class="skill-block">
                 <p class="skill-icon">
                   <i class="fa-brands fa-html5"></i>
@@ -222,31 +342,35 @@
       <div class="resume-section" id="resume">
         <div class="container">
           <h2 class="text-center">Resume</h2>
-          <div class="row">
-            <div class="col-5">
+          <div
+            class="row resume-inner-wrapper flex-column-reverse flex-lg-row gap-4 gap-lg-0"
+          >
+            <div class="col-12 col-lg-5">
               <h3 class="mb-3">My Education</h3>
-              <div class="resume-card-wrapper">
-                <p class="resume-card-date">2017-2019</p>
-                <h3 class="resume-card-title">B.Ed (1.5 years)</h3>
-                <h4 class="resume-card-place">
-                  Virtual University of Pakistan
-                </h4>
-              </div>
-              <div class="resume-card-wrapper">
-                <p class="resume-card-date">2015-2017</p>
-                <h3 class="resume-card-title">Msc Computer Science</h3>
-                <h4 class="resume-card-place">
-                  Virtual University of Pakistan
-                </h4>
-              </div>
-              <div class="resume-card-wrapper">
-                <p class="resume-card-date">2013-2015</p>
-                <h3 class="resume-card-title">Bsc Computer Science</h3>
-                <h4 class="resume-card-place">University of Gujrat</h4>
+              <div class="resume-card-outer-wrapper">
+                <div class="resume-card-wrapper resume-edu-card">
+                  <p class="resume-card-date">2017-2019</p>
+                  <h3 class="resume-card-title">B.Ed (1.5 years)</h3>
+                  <h4 class="resume-card-place">
+                    Virtual University of Pakistan
+                  </h4>
+                </div>
+                <div class="resume-card-wrapper resume-edu-card">
+                  <p class="resume-card-date">2015-2017</p>
+                  <h3 class="resume-card-title">Msc Computer Science</h3>
+                  <h4 class="resume-card-place">
+                    Virtual University of Pakistan
+                  </h4>
+                </div>
+                <div class="resume-card-wrapper resume-edu-card">
+                  <p class="resume-card-date">2013-2015</p>
+                  <h3 class="resume-card-title">Bsc Computer Science</h3>
+                  <h4 class="resume-card-place">University of Gujrat</h4>
+                </div>
               </div>
             </div>
-            <div class="col-7">
-              <h3 class="mb-3">My Education</h3>
+            <div class="col-12 col-lg-7">
+              <h3 class="mb-3">My Experience</h3>
               <div class="resume-card-wrapper">
                 <p class="resume-card-date">July 2024 - December 2024</p>
                 <h3 class="resume-card-title">Frontend Developer</h3>
@@ -345,7 +469,7 @@
             >
               <!-- flip cards -->
               <div class="row flip-card-wrapper">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="flip">
                     <div
                       class="front"
@@ -361,7 +485,7 @@
                       >
                         <div class="text-center">
                           <h2>Angular</h2>
-                          <p class="mb-0">
+                          <p class="mb-4 mb-lg-0">
                             Good tools make application development quicker and
                             easier to maintain than if you did everything by
                             hand..
@@ -379,7 +503,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="flip">
                     <div
                       class="front"
@@ -395,7 +519,7 @@
                       >
                         <div class="text-center">
                           <h2>Angular</h2>
-                          <p class="mb-0">
+                          <p class="mb-4 mb-lg-0">
                             Good tools make application development quicker and
                             easier to maintain than if you did everything by
                             hand..
@@ -413,7 +537,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="flip">
                     <div
                       class="front"
@@ -429,7 +553,7 @@
                       >
                         <div class="text-center">
                           <h2>Angular</h2>
-                          <p class="mb-0">
+                          <p class="mb-4 mb-lg-0">
                             Good tools make application development quicker and
                             easier to maintain than if you did everything by
                             hand..
@@ -483,8 +607,8 @@
       <div class="contact-section" id="contact">
         <div class="container">
           <h2 class="text-center">Contact</h2>
-          <div class="row mt-5">
-            <div class="col-6">
+          <div class="row mt-5 gap-5 gap-md-0">
+            <div class="col-12 col-md-6">
               <h3 class="get-intouch-heading">Get in touch</h3>
               <h4 class="address-heading">Address</h4>
               <p>Lahore, Pakistan</p>
@@ -518,7 +642,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <h3 class="get-intouch-heading">Send Me Message</h3>
               <form action="">
                 <div class="mb-3">
