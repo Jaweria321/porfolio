@@ -378,7 +378,10 @@ main {
   opacity: 1;
   transform: rotateY(0deg);
 }
-
+.flip:hover > .back .flip-card-buttons-wrapper{
+    display: flex;
+    gap: 15px;
+}
 .flip {
   position: relative;
   display: inline-block;
@@ -388,29 +391,37 @@ main {
   height: 400px;
   background-color: var(--color-bg-1);
 }
+.flip h3 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.flip > .back h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
 .flip > .front,
 .flip > .back {
   display: block;
   color: white;
   width: inherit;
   background-size: cover !important;
-  background-position: center !important;
+  background-position: top center !important;
   height: 400px;
   background: black;
   border-radius: 10px;
   border: 1px solid var(--color-bg-1);
 }
-.flip > .front .text-background,
 .flip > .back {
     padding: 1em 2em;
 }
 .flip > .front .text-background {
-    background-image: linear-gradient(to right, rgb(64 63 64 / 26%), rgb(174 183 180 / 26%));
-    /* box-shadow: rgb(157 154 154 / 26%) 0px 7px 29px 0px; */
-    color: white;
-    
-    border-radius: 10px;
-    height: 100%;
+    color: var(--primary-color);
+    padding: 1em;
+    margin-bottom: 0;
+    text-shadow: 5px 4px 21px rgba(200, 83, 83, 0.6);
+    /* text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04); */
+   
 }
 .flip > .front p,
 .flip > .back p {
@@ -419,7 +430,7 @@ main {
   color: #999;
 }
 .flip-card-buttons-wrapper {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -431,7 +442,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 34px;
+    /* height: 34px; */
 }
 .flip-card-buttons-wrapper a {
     background-color: black;

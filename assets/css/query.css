@@ -98,6 +98,9 @@
     .flip-card-buttons-wrapper {
         flex-direction: column;
     }
+    .sidebar-menu-wrapper {
+        justify-content: flex-start;
+    }
 }
 @media only screen and (max-width: 767px) {
     .typing-container{
@@ -112,6 +115,11 @@
     .portfolio-section,
     .contact-section{
         padding: 50px 5%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .skill-block {
+        padding: 20px 5px;
     }
 }
 @media only screen and (max-height: 620px) {
